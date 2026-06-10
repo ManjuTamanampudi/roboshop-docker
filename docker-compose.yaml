@@ -82,4 +82,11 @@ services:
 
 networks:
   default:
-    name: roboshop      
+    name: roboshop  
+    driver: bridge
+    external: false
+volumes:
+  mongodb: 
+  mysql:
+  redis:
+  rabbitmq:    
