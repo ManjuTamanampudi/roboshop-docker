@@ -1,13 +1,13 @@
 services:
   mongodb:
     build: ./mongodb
-    image: mongodb:4.4
+    image: manjukarri/mongodb:1.0.0
     container_name: mongodb
     volumes:
       - mongodb:/data/db
   mysql:
     build: ./mysql
-    image: mysql:8
+    image: manjukarri/mysql:1.0.0
     container_name: mysql
     volumes:
       - mysql:/var/lib/mysql
