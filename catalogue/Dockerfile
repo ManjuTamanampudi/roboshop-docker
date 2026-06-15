@@ -14,7 +14,7 @@ USER roboshop
 ENV MONGO=true \
     MONGO_URL=mongodb://mongodb:27017/catalogue
 CMD [ "server.js"]
-ENV ["node"] 
+ENTRYPOINT ["node"] 
 
 
 # FROM node:20
