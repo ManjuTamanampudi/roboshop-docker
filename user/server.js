@@ -78,6 +78,7 @@ app.get('/uniqueid', async (req, res) => {
 });
 
 // check user exists
+// line added to test layers
 app.get('/check/:id', async (req, res) => {
     if (mongoConnected) {
         try {
